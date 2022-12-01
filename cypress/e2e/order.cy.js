@@ -12,6 +12,7 @@ it('Place order', () => {
   registration();
   MainPage.clickAddToBasket(2);
   MainPage.clickAddToBasket(3);
+  cy.wait(3000);
   MainPage.clickYourBasketButton();
   BasketPage.clickCheckoutButton();
   AddressPage.clickAddNewAddressButton();

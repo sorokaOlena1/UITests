@@ -33,14 +33,16 @@ class PaymentOptionsPage extends BasePage{
         // cy.get('.mat-form-field.ng-tns-c119-34 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').click();
         // cy.get('.mat-form-field.ng-tns-c119-34 > .mat-form-field-wrapper').select();
         // cy.get('#mat-input-3').click();
+        // cy.get('#mat-input-18').select(1)
         cy.get('#mat-input-3').select(0)
         // cy.get('#mat-input-3').eq(1).click();
     }
     selectExpiryYear(){
         cy.log(`chooseExpiryYear -  2080`);
-        cy.get('.mat-form-field.ng-tns-c119-35 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').click();
+        // cy.get('.mat-form-field.ng-tns-c119-35 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').click();
         // cy.get('#mat-input-3').click();
         // cy.get('select');
+        // cy.get('#mat-input-19').select(1)
         cy.get('select').select(2080);
     }
 
