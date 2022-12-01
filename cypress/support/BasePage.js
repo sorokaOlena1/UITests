@@ -1,5 +1,5 @@
 export default class BasePage{
-    
+
     getLoginButton(){
         return cy.get('#navbarLoginButton');
     }
@@ -9,6 +9,7 @@ export default class BasePage{
     }
 
     clickYourBasketButton(){
+        cy.wait(3000);
         cy.get('[aria-label="Show the shopping cart"]').click();
     }
 
